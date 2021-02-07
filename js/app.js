@@ -79,10 +79,10 @@ function popUpClose() {
     classAdd.classList = 'popup hidden';
 }
 
-let declainBtn = document.getElementById('declainBtn'),
-    acceptBtn = document.getElementById('acceptBtn'),
-    confirmContent = document.getElementById('confirmContent'),
-    confirmContent = document.getElementById('confirmContent');
+const confirmForm = document.getElementById('confirm');
+let declainBtn = document.getElementById('declainBtn');
+let acceptBtn = document.getElementById('acceptBtn');
+let confirmContent = document.getElementById('confirmContent');
 
 
 function addDeleteListeners() {
