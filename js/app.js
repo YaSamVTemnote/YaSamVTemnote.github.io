@@ -79,10 +79,10 @@ function popUpClose() {
     classAdd.classList = 'popup hidden';
 }
 
-let declainBtn = document.getElementById('declainBtn');
-let acceptBtn = document.getElementById('acceptBtn');
-let confirmContent = document.getElementById('confirmContent');
-
+let declainBtn = document.getElementById('declainBtn'),
+    acceptBtn = document.getElementById('acceptBtn'),
+    confirmContent = document.getElementById('confirmContent'),
+    confirmContent = document.getElementById('confirmContent');
 
 
 function addDeleteListeners() {
@@ -94,12 +94,8 @@ function addDeleteListeners() {
         let addText = document.getElementById('confirm');
         let parentEl = event.target.parentElement;
         let text = `Are you sure you want to delete '${parentEl.firstElementChild.textContent}'  event;`;
-        let newSpan = document.createElement('span');
-        newSpan.id = 'span';
-        newSpan.textContent = '';
-        newSpan.textContent = text;
-        addText.prepend(newSpan);
-        acceptBtn.addEventListener('click', (confirm) =>{
+        confirmContent.textContent = text;
+        addText.addEventListener('click', (confirm) =>{
             if(confirm.target.id == 'acceptBtn') {
                 popUpClose();
                 let idData = event.target.id.split('-'),
