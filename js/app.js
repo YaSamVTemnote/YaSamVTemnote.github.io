@@ -157,33 +157,3 @@ function selectListCreate (arr, element) {
 const createParticipants = document.getElementById('selectAttender');
 
 selectListCreate(chooseAttender, createParticipants);
-
-
-
-
-
-
-
-
-
-// function addDeleteListeners() {
-//     const trashBtn = document.querySelectorAll('.close');
-//     trashBtn.forEach(item => {
-//         item.addEventListener('click', (event) => {
-//         event.preventDefault();
-//         popUpStart();
-//         acceptBtn.addEventListener('click', (confirm) =>{
-
-//         });
-
-//         let idData = event.target.id.split('-'),
-//         dayOfWeek = idData[0],
-//         hour = idData[1];
-//         schedule[hour][dayOfWeek].isBooked = false;
-//         schedule[hour][dayOfWeek].meetingName = ''; 
-//         schedule[hour][dayOfWeek].attenders = [];
-//         localStorage.setItem('schedule', JSON.stringify(schedule));
-//         renderTable();            
-//         });
-//     });
-// }
