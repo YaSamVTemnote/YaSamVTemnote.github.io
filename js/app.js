@@ -106,12 +106,12 @@ function addDeleteListeners() {
                 schedule[hour][dayOfWeek].attenders = [];
                 localStorage.setItem('schedule', JSON.stringify(schedule));
                 renderTable();
-                document.getElementById('span').remove(); 
+                confirmContent.innerHTML = '';
             }
 
             });
-                declainBtn.addEventListener('click', () => {
-                document.getElementById('span').remove(); 
+            declainBtn.addEventListener('click', () => {
+                confirmContent.innerHTML = '';
                 popUpClose();
         });
                           
