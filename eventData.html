@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/style.css">
+    <title>Document</title>
+</head>
+<body>
+<div id="add-event">
+
+    <div id="error" class='hidden'>
+        <span id='error-icon'></span>
+            Failed to create an event. Time slot is already booked
+            <span id='close-icon' onclick='window.location.reload()'></span>
+    </div>
+    <form class="event-form">
+        <div class="form-fields-wrapper">
+            <label class="label" for="eventName">
+                <span class="label-text"> Name of event:</span>
+                <input class="label-input" type="text" id='eventName' value placeholder='Enter the meeting name'>
+            </label>
+            <label class="label" for="daySelect">
+                <span class="label-text"> Day</span>
+                <select id='daySelect' class="label-input">
+                    <option disabled selected value>Select day</option>
+                </select>
+            </label>
+            <label class="label" for="participantSelect">
+                <span class="label-text">Participants :</span>
+                <div class="custom-select-wrapper">
+                    <span class="label-input">Participants</span>
+                    <select id='participantSelect' multiple size='2 '>
+                        <option disabled selected value>Select attenders</option>
+                    </select>
+                </div>
+            </label>
+            <label class="label" for="timeSelect">
+                <spanc class="label-text">Time:</spanc>
+                <select id='timeSelect' class="label-input">
+                    <option disabled selected value>Select time</option>
+                </select>
+            </label>
+        </div>
+        <div class="form-actions">
+            <button id='cancelButton'>Cancel</button>
+            <button id='createButton' disabled>Create</button>
+        </div>
+    </form>
+</div>
+<script src='./dist/event.bundle.js'></script>
+</body>
+</html>

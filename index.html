@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../src/style.css">
+</head >
+<body >
+   
+    
+
+    <div id="schedule">
+        <div id="schedule-header">
+            Calendar
+            <select id='selectAttender'>
+                <option disabled selected value>All Participants</option>
+            </select>
+            <button id='newEventButton'>Add New Event</button>
+            
+        </div>
+        <div id="schedule-body">
+            <table id="schedule-table"></table>
+        </div>
+    </div>    
+
+    <div id="confirm" class="popup hidden">
+        <span id='confirmContent'></span>
+        <button id ='declainBtn'>No</button>
+        <button id='acceptBtn'>Yes</button>
+    </div>
+
+    <script src='./dist/app.bundle.js'></script>
+</body>
+</html> 
